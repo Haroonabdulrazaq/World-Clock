@@ -1,0 +1,61 @@
+.world-clock{
+    display: grid;
+    grid-template: 1fr/ 1fr 1fr 1fr ;
+    grid-gap:5px; 
+    margin: 5px;
+}
+.negative-time-zone{
+    background: #B8336A;
+}
+.gmt{
+ 
+}
+.gmt-clock{
+    width:1fr;
+    height: 150px;
+    line-height: 1.4em;
+    font-size: 1.5em;
+    border-bottom: 1px solid #333;
+    color: #000000;
+    border-radius:5px; 
+}
+.gmt-display-time{
+    margin: 45px 5px;
+    
+}
+.off-set {
+    display: grid;
+    grid-template: 1fr 1fr 1fr/ 1fr 1fr 1fr ;
+    grid-gap: 5px;
+    width:100%;
+    height: 100%;
+    text-align: center;
+} 
+.off-set div:nth-child(1){
+    background: yellow;
+}
+.off-set div:nth-child(2){
+    background:lightcoral;
+}
+.off-set div:nth-child(3){
+    background:lightsalmon;
+}
+.off-set div:nth-child(4){
+    background:#B8336A;
+}
+.off-set div:nth-child(5){
+    background: lawngreen;
+}.off-set div:nth-child(6){
+    background:saddlebrown;
+}
+.off-set div:nth-child(7){
+    background:firebrick;
+}
+.off-set div:nth-child(8){
+    background: violet;
+}.off-set div:nth-child(9){
+    background:slategrey;
+}
+.positive-time-zone{
+    background: rgb(59, 162, 231);
+}

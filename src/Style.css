@@ -1,32 +1,7 @@
   .form-div{
     height: 20vh;
 }  
-.world-clock{
-    display:flex;
-    flex-direction: row;
-    flex-flow: nowrap;
-    justify-content: space-around;
-    justify-content: space-between;
-    margin:5px;
-    padding:5px;
-
-}
-.Negative-time-zone{
-flex-basis:1;
-background: #aee345;
-height: 50vh;
-}
-.Positive-time-zone{
-    flex-basis:1;
-    background: #234dea;
-    height: 50vh;
-    }
-.gmt{
-    flex-basis:1;
-    background: #8a026c;
-    height: 50vh;
-    }
-
+ 
     .footer{
         height: 30vh;
         background: #333;

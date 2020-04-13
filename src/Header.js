@@ -7,7 +7,7 @@ import './App.css';
         return (
             <div className="header">
              <h1 className="header-text">World Clock</h1>
-             <a href="#form-div" className="anchor anchor-discover">Discover Your Partners Time</a>
+             <a href="#form-div" className="anchor anchor-discover">Discover partners time</a>
             </div>
           );
      }
