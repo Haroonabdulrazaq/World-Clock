@@ -1,6 +1,6 @@
 .world-clock{
     display: grid;
-    grid-template: 1fr/ 1fr 1fr 1fr ;
+    grid-template: 1fr/ 2fr 1fr 2fr ;
     grid-gap:5px; 
     margin: 5px;
 }
@@ -36,9 +36,9 @@
 }
 .off-set div:nth-child(2){
     background:lightcoral;
-}
+}                            
 .off-set div:nth-child(3){
-    background:lightsalmon;
+    background:lightsalmon;   
 }
 .off-set div:nth-child(4){
     background:#B8336A;

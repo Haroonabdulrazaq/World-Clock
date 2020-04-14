@@ -8,14 +8,18 @@ class Clock extends React.Component {
      super(props);
 
      this.state={
-          time: new Date().toUTCString(),
+        hours: new Date().getUTCHours(),
+        min: new Date().getUTCMinutes(),
+        sec: new Date().getUTCSeconds(),
          
      }
  
  }
    tick =()=>{
     this.setState({
-          time: new Date().toUTCString()  
+        hours: new Date().getUTCHours(),
+        min: new Date().getUTCMinutes(),
+        sec: new Date().getUTCSeconds() 
     })
 }
     componentDidMount(){
@@ -30,18 +34,22 @@ class Clock extends React.Component {
 
 
     render() {    
+       const padTime =(timeUnit)=>{
+           let stringSec= String(timeUnit);
+        return stringSec.length<2? '0'+timeUnit: timeUnit
+        }
        
+     
         return (
             <div className="world-clock">
                 
-                <NegativeTime firstNeg = {this.state.time}/>
+                <NegativeTime hours={this.state.hours} min= {this.state.min} sec= {this.state.sec}/>
 
                 <div className="gmt">
 
                     <div className="gmt-clock">
-                        <h3>GMT Time</h3>
-                        <p className="gmt-display-time">{this.state.time}</p> 
-                    
+                        <h3>GMT Time</h3>      
+                       <p className="gmt-display-time"> {padTime(this.state.hours) }:  {padTime(this.state.min) }:  {padTime(this.state.sec) } </p> 
                     </div>
                     <div className="off-set">
                         <div className="off-set first">
